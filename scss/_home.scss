@@ -97,3 +97,74 @@
     }
   }
 }
+
+.s-card-neon {
+  padding-top: 13rem;
+
+  .left-area {
+    width: 100%;
+    max-width: 28rem;
+
+    .ilustra-mockup {
+      position: relative;
+      width: 100%;
+      max-width: 28rem;
+      margin-bottom: 13rem;
+
+      .circle {
+        position: absolute;
+        max-width: 38rem;
+        top: 8.8rem;
+        right: 11.4rem;
+        z-index: -1;
+      }
+    }
+  }
+
+  .text-area {
+    width: 100%;
+    @include flex(column, center, center);
+
+    .icon {
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 0.5rem;
+        height: 8.2rem;
+        position: absolute;
+        background: url(../img/points.svg) no-repeat center center;
+        top: -10.4rem;
+        left: 50%;
+        margin-left: -0.25rem;
+      }
+    }
+
+    .info-text {
+      @include flex(column, center, center);
+
+      h3 {
+        text-align: center;
+        margin-top: 3.6rem;
+        color: $grey-600;
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: $grey-400;
+        opacity: 0.8;
+        margin-bottom: 2.6rem;
+      }
+
+      ul {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
