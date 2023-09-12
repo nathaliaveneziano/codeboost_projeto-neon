@@ -854,16 +854,19 @@
       &.mockup-01 {
         left: 0;
         bottom: 4.8rem;
+        z-index: 2;
       }
 
       &.mockup-02 {
         top: 0.4rem;
         left: 26rem;
+        z-index: 2;
       }
 
       &.circle {
         right: 0;
         bottom: 0;
+        z-index: 2;
       }
     }
   }
